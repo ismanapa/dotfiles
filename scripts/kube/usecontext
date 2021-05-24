@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Select default context of cluster
+##?
+##? Usage:
+##?   usecontext
+docs::parse "$@"
+
+echo "Select the context to use:"
+context=$(kubectl config get-contexts | fzf --height 30% --layout reverse | awk '{print $2}')
+kubectl config use-context $context

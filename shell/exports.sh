@@ -8,6 +8,7 @@ export FZF_DEFAULT_OPTS='
 '
 
 export path=(
+  "$DOTFILES_PATH/wsl/bin"
   "$HOME/bin"
   "$DOTLY_PATH/bin"
   "$DOTFILES_PATH/bin"

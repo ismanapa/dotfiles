@@ -20,7 +20,6 @@ PATH=$(
   IFS=":"
   echo "${path[*]}"
 )
-echo "Patatas"
 export PATH
 
 themes_paths=(
