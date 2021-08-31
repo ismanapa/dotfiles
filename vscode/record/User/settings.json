@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Atom One Light",
+    "window.zoomLevel": 3,
+    "workbench.statusBar.visible": false,
+    "gitlens.currentLine.enabled": false,
+    "workbench.activityBar.visible": false
+}
