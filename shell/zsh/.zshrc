@@ -7,6 +7,8 @@ setopt HIST_FCNTL_LOCK
 setopt +o nomatch
 # setopt autopushd
 
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+
 # Start zim
 source "$ZIM_HOME/init.zsh"
 
@@ -26,3 +28,7 @@ source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
