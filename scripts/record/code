@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Open code for record
+##?
+##? Usage:
+##?   code <path>
+docs::parse "$@"
+
+code $1 --user-data-dir \\wsl$\Ubuntu-20.04\home\ismanapa\.dotfiles\vscode\record

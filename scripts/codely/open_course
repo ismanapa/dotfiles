@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+source "$DOTFILES_PATH/scripts/codely/src/codely.sh"
+
+##? Copy a CodelyTV Pro Course to the clipboard
+#?? 1.0.0
+##?
+##? Usage:
+##?   copy_course
+docs::parse "$@"
+
+courses=$(codely::list_courses)
+
+course_url=$(echo "$courses" | fzf --height 30% --layout reverse | awk -F';' '{print $2}')
+
+start $course_url

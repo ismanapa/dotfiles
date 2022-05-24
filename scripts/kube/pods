@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? List pods of selected namespace
+##?
+##? Usage:
+##?   pods
+docs::parse "$@"
+
+echo "Select the namespace to see the pods:"
+ns=$(kubectl get ns | fzf --height 30% --layout reverse | awk '{print $1}')
+kubectl get pods -n "$ns"

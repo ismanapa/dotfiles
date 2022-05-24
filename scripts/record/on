@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Enable record mode
+##?
+##? Usage:
+##?   on
+docs::parse "$@"
+
+powershell -command "&{\$p='HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3';\$v=(Get-ItemProperty -Path \$p).Settings;\$v[8]=3;&Set-ItemProperty -Path \$p -Name Settings -Value \$v;&Stop-Process -f -ProcessName explorer}"
+qres /x:1920 /y:1080

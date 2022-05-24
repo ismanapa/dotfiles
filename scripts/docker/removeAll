@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Remove all containers
+##?
+##? Usage:
+##?   removeAll
+docs::parse "$@"
+
+docker rm $(docker ps -a -q)

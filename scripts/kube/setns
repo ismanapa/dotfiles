@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Set de current namespace
+##?
+##? Usage:
+##?   setns
+docs::parse "$@"
+
+echo "Select the namespace to use:"
+ns=$(kubectl get ns | fzf --height 30% --layout reverse  | awk '{print $1}')
+kubectl config set-context --current --namespace="$ns"
+echo "Namespace: $ns"

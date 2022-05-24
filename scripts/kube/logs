@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Show logs of selected pod
+##?
+##? Usage:
+##?   logs
+docs::parse "$@"
+
+echo "Select the namespace to see the pods:"
+ns=$(kubectl get ns | fzf --height 30% --layout reverse  | awk '{print $1}')
+
+echo "Select the pod to get logs:"
+pod=$(kubectl get pods -n $ns | fzf --height 30% --layout reverse  | awk '{print $1}')
+
+kubectl logs "$pod" -n "$ns" --tail=50 --follow
