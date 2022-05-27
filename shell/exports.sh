@@ -1,6 +1,8 @@
 # ------------------------------------------------------------------------------
 # Codely theme config
 # ------------------------------------------------------------------------------
+export CODELY_THEME_STATUS_ICON_OK=""
+export CODELY_THEME_STATUS_ICON_KO=""
 export CODELY_THEME_MINIMAL=false
 export CODELY_THEME_MODE="dark"
 export CODELY_THEME_PROMPT_IN_NEW_LINE=false
@@ -24,11 +26,13 @@ fi
 
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
+export WIN_HOME="/mnt/c/Users/isman"
+
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
-export path=(
-  "$DOTFILES_PATH/wsl/bin"
+
+path+=(
   "$HOME/bin"
   "$DOTLY_PATH/bin"
   "$DOTFILES_PATH/bin"
@@ -45,5 +49,6 @@ export path=(
   "/usr/bin"
   "/usr/sbin"
   "/sbin"
-  "$WINPATH"
 )
+
+export path

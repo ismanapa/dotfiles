@@ -1,0 +1,7 @@
+[user]
+	email = ismanapa@gmail.com
+	name = Isma Navarro
+[core]
+	autocrlf = input
+	editor = nano
+	excludesfile = ~/.gitignore_global
