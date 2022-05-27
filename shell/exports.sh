@@ -32,10 +32,10 @@ export WIN_HOME="/mnt/c/Users/isman"
 # Path - The higher it is, the more priority it has
 # ------------------------------------------------------------------------------
 
-path+=(
+custom_path=(
+  "$DOTFILES_PATH/bin"
   "$HOME/bin"
   "$DOTLY_PATH/bin"
-  "$DOTFILES_PATH/bin"
   "$JAVA_HOME/bin"
   "$GEM_HOME/bin"
   "$GOPATH/bin"
@@ -50,5 +50,7 @@ path+=(
   "/usr/sbin"
   "/sbin"
 )
+
+path=("${custom_path[@]}" "${path[@]}")
 
 export path

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [[ $PWD == /mnt/c/* ]]; then
+    git.exe "$@"
+else 
+    /bin/git "$@"
+fi
+
+# if [[ $M == "L" ]]; then
+#     /bin/git "$@"
+# else 
+#     git.exe "$@"
+# fi
