@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ $PWD == /mnt/c/* ]]; then
+    cmd.exe /c code "$@"
+else 
+    code "$@"
+fi

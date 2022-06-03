@@ -27,6 +27,7 @@ fi
 export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 
 export WIN_HOME="/mnt/c/Users/isman"
+export DEV_DIRECTORY="/mnt/c/dev"
 
 # ------------------------------------------------------------------------------
 # Path - The higher it is, the more priority it has
