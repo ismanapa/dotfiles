@@ -1,11 +1,20 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2022-05-27T16:08:28.856-00:00",
+	"CreationDate" : "2022-07-29T15:29:02.698-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
+				{
+					"PackageIdentifier" : "AgileBits.1Password"
+				},
+				{
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "Shure.ShurePlusMOTIV"
+				},
 				{
 					"PackageIdentifier" : "Canonical.Ubuntu.1804"
 				},
@@ -13,7 +22,28 @@
 					"PackageIdentifier" : "Canonical.Ubuntu.2004"
 				},
 				{
+					"PackageIdentifier" : "Discord.Discord"
+				},
+				{
+					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
+				{
+					"PackageIdentifier" : "ImageLine.FLStudio"
+				},
+				{
+					"PackageIdentifier" : "HandBrake.HandBrake"
+				},
+				{
+					"PackageIdentifier" : "HeidiSQL.HeidiSQL"
+				},
+				{
+					"PackageIdentifier" : "Melodics.Melodics"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
@@ -28,6 +58,18 @@
 					"PackageIdentifier" : "Microsoft.OneDrive"
 				},
 				{
+					"PackageIdentifier" : "Postman.Postman"
+				},
+				{
+					"PackageIdentifier" : "Rustlang.Rustup"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "RARLab.WinRAR"
+				},
+				{
 					"PackageIdentifier" : "Obsidian.Obsidian"
 				},
 				{
@@ -40,19 +82,31 @@
 					"PackageIdentifier" : "ALCPU.CoreTemp"
 				},
 				{
-					"PackageIdentifier" : "OpenJS.NodeJS"
+					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
-					"PackageIdentifier" : "Google.Chrome"
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
+				},
+				{
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier" : "Elgato.StreamDeck"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
+				},
+				{
+					"PackageIdentifier" : "GitHub.cli"
+				},
+				{
+					"PackageIdentifier" : "Elgato.ControlCenter"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2013Redist-x86"
@@ -70,6 +124,9 @@
 					"PackageIdentifier" : "Microsoft.VC++2010Redist-x86"
 				},
 				{
+					"PackageIdentifier" : "NickeManarin.ScreenToGif"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.DotNet.Runtime.5"
 				}
 			],
@@ -82,5 +139,5 @@
 			}
 		}
 	],
-	"WinGetVersion" : "1.2.10271"
+	"WinGetVersion" : "1.2.11601"
 }
