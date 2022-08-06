@@ -1,0 +1,4 @@
+zimfw() { source /home/ismanapa/.dotfiles/shell/zsh/.zim/zimfw.zsh "${@}" }
+zmodule() { source /home/ismanapa/.dotfiles/shell/zsh/.zim/zimfw.zsh "${@}" }
+typeset -g _zim_fpath=()
+
