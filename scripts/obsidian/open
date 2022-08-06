@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Open obsidian
+##?
+##? Usage:
+##?   open
+docs::parse "$@"
+
+start obsidian://

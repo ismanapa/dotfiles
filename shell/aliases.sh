@@ -35,3 +35,6 @@ alias ghprc="gh pr create"
 
 #Dev
 alias dev='cd $DEV_DIRECTORY'
+
+#obsidian
+alias obs='dot obsidian'

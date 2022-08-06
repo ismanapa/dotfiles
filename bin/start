@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cmd.exe /c start "$@"
+cmd.exe /c start "$@" > /dev/null 2>&1
